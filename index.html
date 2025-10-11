@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LFM Technologies</title>
+  <title>LFM Technologies – Innoviamo. Costruiamo. Connettiamo.</title>
+  <meta name="description" content="LFM Technologies sviluppa siti web, app multipiattaforma, infrastrutture cloud e API su misura per aziende, creator e professionisti.">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo1.png" type="image/png">
 </head>
+
 <body>
   <div class="background">
     <div class="particles"></div>
     <div class="particles delay"></div>
   </div>
 
+  <!-- Navbar -->
   <header>
     <div class="nav-logo">
       <img src="assets/logo1.png" alt="LFM Technologies Logo" style="height:60px;">
@@ -24,6 +28,7 @@
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-content">
       <div class="glow-circle"></div>
@@ -34,6 +39,7 @@
     </div>
   </section>
 
+  <!-- About -->
   <section id="about" class="about">
     <h2>Chi siamo</h2>
     <p>
@@ -43,6 +49,7 @@
     </p>
   </section>
 
+  <!-- Services -->
   <section id="services" class="services">
     <h2>Servizi</h2>
     <div class="service-cards">
@@ -53,16 +60,18 @@
           Perfetti per aziende, professionisti e creator che vogliono distinguersi online.
         </p>
       </div>
+
       <div class="service-card">
         <h3>App Multipiattaforma & Backend</h3>
         <p>
-          Sviluppiamo applicazioni per <strong>iOS, Android e Web</strong> 
+          Sviluppiamo applicazioni per <strong>iOS, Android e Web</strong>.
           Ideali per <strong>aziende, negozi, creator e piattaforme ad abbonamento</strong>
           (come OnlyFans o Patreon).<br>
           Gestione utenti, ordini, contenuti privati, notifiche push e pagamenti integrati —
           tutto in un'unica soluzione scalabile.
         </p>
       </div>
+
       <div class="service-card">
         <h3>Cloud & API</h3>
         <p>
@@ -73,21 +82,26 @@
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contatti</h2>
     <p>Hai un progetto o un'idea? Parliamone.</p>
-    <a href="mailto:info@lfmtechnologies.it" class="btn neon-btn">Scrivici ora</a>
+    <a href="mailto:info@lfmtechnologies.it?subject=Richiesta%20preventivo&body=Ciao%20LFM%20Technologies,%0Aho%20bisogno%20di%20una%20soluzione%20digitale%20su%20misura.%20Parliamone!" class="btn neon-btn">
+      Scrivici ora
+    </a>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2024 LFM Technologies. All rights reserved.</p>
     <div class="social">
-      <a href="https://www.instagram.com/lfmtechnlogies/?igsh=YnFsYnlzbDBoNG13&utm_source=qr" target="_blank">
+      <a href="https://www.instagram.com/lfmtechnlogies/?igsh=YnFsYnlzbDBoNG13&utm_source=qr" target="_blank" rel="noopener">
         <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram">
       </a>
     </div>
   </footer>
 
+  <!-- Cursor glow -->
   <script>
     document.addEventListener('mousemove', e => {
       document.body.style.setProperty('--x', e.clientX + 'px');
