@@ -43,7 +43,7 @@ nav a:hover{
 }
 .hero .overlay{
   position:absolute;top:0;left:0;width:100%;height:100%;
-  background:linear-gradient(-45deg,#001a0f,#00463f,#005c33,#001a0f);
+  background:linear-gradient(-45deg,#1C202B,#00463f,#005c33,#1C202B);
   background-size:400% 400%;
   animation:gradient 10s ease infinite;
   z-index:-1;
@@ -102,7 +102,7 @@ h2{
 
 /* Servizi */
 .services{
-  background:radial-gradient(circle at top,#001a0f 0%,#000 100%);
+  background:radial-gradient(circle at top,#1C202B 0%,#1C202B 100%);
 }
 .service-cards{
   display:flex;flex-wrap:wrap;justify-content:center;gap:40px;margin-top:50px;
@@ -123,7 +123,7 @@ h2{
 
 /* Contatti */
 .contact{
-  background:linear-gradient(180deg,#001a0f 0%,#000000 100%);
+  background:linear-gradient(180deg,#1C202B 0%,#000000 100%);
 }
 .contact p{
   color:#ccc;
