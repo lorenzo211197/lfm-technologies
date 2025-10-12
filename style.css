@@ -160,6 +160,13 @@ footer .social a img:hover{
   transform:scale(1.2);
 }
 
+.slogan {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #3abbb5 !important;
+  text-shadow: 0 0 10px rgba(58,187,181,0.5), 0 0 25px rgba(75,195,122,0.3);
+  animation: glowSoft 2.5s ease-in-out infinite alternate;
+}
 /* Responsive */
 @media(max-width:768px){
   header{padding:15px 25px;}
