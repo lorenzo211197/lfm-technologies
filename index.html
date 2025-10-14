@@ -83,14 +83,25 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contatti</h2>
-    <p>Hai un progetto o un'idea? Parliamone.</p>
-    <a href="mailto:info@lfmtechnologies.it?subject=Richiesta%20preventivo&body=Ciao%20LFM%20Technologies,%0Aho%20bisogno%20di%20una%20soluzione%20digitale%20su%20misura.%20Parliamone!" class="btn neon-btn">
-      Scrivici ora
-    </a>
-  </section>
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Contatti</h2>
+  <p>Hai un progetto o un'idea? Parliamone.</p>
+
+  <form action="https://formsubmit.co/info@lfmtechnologies.it" method="POST" class="contact-form">
+    <input type="hidden" name="_next" value="https://lfmtechnologies.it/thankyou.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <div class="form-group">
+      <input type="text" name="Nome" placeholder="Il tuo nome" required>
+      <input type="email" name="Email" placeholder="La tua email" required>
+    </div>
+
+    <textarea name="Messaggio" placeholder="Descrivi la tua idea o progetto..." rows="5" required></textarea>
+
+    <button type="submit" class="btn neon-btn">🚀 Invia richiesta</button>
+  </form>
+</section>
 
   <!-- Footer -->
   <footer>
