@@ -1,79 +1,41 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Richiesta inviata | LFM Technologies</title>
+  <meta name="description" content="Grazie per averci contattato. Il team di LFM Technologies risponderà al più presto.">
+  <link rel="icon" href="assets/logo1.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="/assets/logo1.png" type="image/png">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at center, #111 0%, #000 100%);
-      color: #e0f7fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .container {
-      text-align: center;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
-      padding: 50px 60px;
-      box-shadow: 0 0 40px rgba(72, 239, 255, 0.15);
-      max-width: 500px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #4bc37a;
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1rem;
-      color: #d6d6d6;
-      margin-bottom: 35px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 30px;
-      border: 2px solid #4bc37a;
-      color: #4bc37a;
-      text-decoration: none;
-      border-radius: 50px;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-
-    .btn:hover {
-      background-color: #4bc37a;
-      color: #000;
-      box-shadow: 0 0 20px #4bc37a;
-    }
-
-    .emoji {
-      font-size: 2rem;
-      display: block;
-      margin-bottom: 10px;
-    }
-  </style>
+  
+  <!-- Tag globale di Google (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17652246838"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17652246838');
+  </script>
 </head>
 
-<body>
-  <div class="container">
-    <div class="emoji">🚀</div>
-    <h1>Richiesta inviata con successo!</h1>
-    <p>Grazie per averci contattato.<br>Ti risponderemo il prima possibile.</p>
-    <a href="/" class="btn">← Torna alla Home</a>
-  </div>
+<body style="font-family: 'Poppins', sans-serif; text-align: center; padding: 60px; background: #f9fafb; color: #333;">
+  <img src="assets/logo1.png" alt="LFM Technologies" style="width: 100px; margin-bottom: 20px;">
+  <h1 style="font-weight: 600; color: #222;">✅ Richiesta inviata con successo!</h1>
+  <p style="max-width: 500px; margin: 20px auto; font-size: 1.1rem;">
+    Grazie per averci contattato.<br>
+    Ti risponderemo al più presto per offrirti la soluzione digitale più adatta alle tue esigenze.
+  </p>
+  <a href="index.html" style="display: inline-block; margin-top: 30px; background: #3abbb5; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 500;">
+    Torna alla home
+  </a>
+
+  <!-- Evento di conversione Google Ads -->
+  <script>
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17652246838/Zqd7CKHxla0bELbSn-FB',
+        'value': 1.0,
+        'currency': 'EUR'
+    });
+  </script>
 </body>
 </html>
