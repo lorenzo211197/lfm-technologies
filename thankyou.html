@@ -4,48 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richiesta inviata | LFM Technologies</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/logo1.png" type="image/png">
   <style>
     body {
-      background: radial-gradient(circle at top, rgba(58,187,181,0.1), #0a0a0a 90%);
-      color: #fff;
-      text-align: center;
+      margin: 0;
+      padding: 0;
       font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+      color: #e0f7fa;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
+      overflow: hidden;
     }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 50px 60px;
+      box-shadow: 0 0 40px rgba(72, 239, 255, 0.15);
+      max-width: 500px;
+    }
+
     h1 {
-      font-size: 2.2em;
-      color: #3abbb5;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #4bc37a;
       margin-bottom: 15px;
-      text-shadow: 0 0 10px rgba(58,187,181,0.5);
     }
+
     p {
-      color: #bbb;
-      font-size: 1.1em;
-      margin-bottom: 40px;
+      font-size: 1rem;
+      color: #d6d6d6;
+      margin-bottom: 35px;
     }
-    a {
-      color: #3abbb5;
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border: 2px solid #4bc37a;
+      color: #4bc37a;
       text-decoration: none;
-      border: 2px solid #3abbb5;
-      padding: 10px 25px;
       border-radius: 50px;
       transition: all 0.3s ease;
+      font-weight: 500;
     }
-    a:hover {
-      background: #3abbb5;
-      color: #fff;
-      box-shadow: 0 0 15px #3abbb5;
+
+    .btn:hover {
+      background-color: #4bc37a;
+      color: #000;
+      box-shadow: 0 0 20px #4bc37a;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 10px;
     }
   </style>
 </head>
+
 <body>
-  <h1>🚀 Richiesta inviata con successo!</h1>
-  <p>Grazie per averci contattato.<br>Ti risponderemo il prima possibile.</p>
-  <a href="index.html">Torna alla Home</a>
+  <div class="container">
+    <div class="emoji">🚀</div>
+    <h1>Richiesta inviata con successo!</h1>
+    <p>Grazie per averci contattato.<br>Ti risponderemo il prima possibile.</p>
+    <a href="/" class="btn">← Torna alla Home</a>
+  </div>
 </body>
 </html>
