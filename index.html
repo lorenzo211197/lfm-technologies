@@ -136,5 +136,46 @@
       document.body.style.setProperty('--y', e.clientY + 'px');
     });
   </script>
+
+  <!-- Google Analytics Event Tracking -->
+  <script>
+    // Tracciamento click "Richiedi un preventivo"
+    document.querySelectorAll('a[href="#contact"], .btn').forEach(button => {
+      button.addEventListener('click', function() {
+        gtag('event', 'click_cta', {
+          'event_category': 'engagement',
+          'event_label': this.textContent.trim(),
+          'value': 1
+        });
+      });
+    });
+
+    // Tracciamento invio form
+    document.querySelector('.contact-form')?.addEventListener('submit', function() {
+      gtag('event', 'form_submit', {
+        'event_category': 'conversion',
+        'event_label': 'Richiesta preventivo',
+        'value': 1
+      });
+    });
+
+    // Tracciamento scroll sezioni
+    const sections = ['about', 'services', 'contact'];
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          gtag('event', 'scroll_to_section', {
+            'event_category': 'engagement',
+            'event_label': entry.target.id,
+            'value': 1
+          });
+        }
+      });
+    });
+    sections.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+  </script>
 </body>
 </html>
