@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Richiesta inviata | LFM Technologies</title>
-  <meta name="description" content="Grazie per averci contattato. Il team di LFM Technologies risponderà al più presto.">
-  <link rel="icon" href="assets/logo1.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  
-  <!-- Tag globale di Google (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17652246838"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17652246838');
-  </script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richiesta inviata | LFM Technologies</title>
+    <meta name="description" content="Grazie per averci contattato. Il team di LFM Technologies risponderà al più presto.">
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo1.png" type="image/png">
 
-<body style="font-family: 'Poppins', sans-serif; text-align: center; padding: 60px; background: #f9fafb; color: #333;">
-  <img src="assets/logo1.png" alt="LFM Technologies" style="width: 100px; margin-bottom: 20px;">
-  <h1 style="font-weight: 600; color: #222;">✅ Richiesta inviata con successo!</h1>
-  <p style="max-width: 500px; margin: 20px auto; font-size: 1.1rem;">
-    Grazie per averci contattato.<br>
-    Ti risponderemo al più presto per offrirti la soluzione digitale più adatta alle tue esigenze.
-  </p>
-  <a href="index.html" style="display: inline-block; margin-top: 30px; background: #3abbb5; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 500;">
-    Torna alla home
-  </a>
+    <!-- ✅ Google Analytics 4 & Google Ads Conversion Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-21BRWVBEVR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-21BRWVBEVR');
+      gtag('config', 'AW-17652246838');
+    </script>
+  </head>
 
-  <!-- Evento di conversione Google Ads -->
-  <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17652246838/Zqd7CKHxla0bELbSn-FB',
-        'value': 1.0,
-        'currency': 'EUR'
-    });
-  </script>
-</body>
+  <body>
+    <div class="background">
+      <div class="particles"></div>
+      <div class="particles delay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <div class="nav-logo">
+        <img src="assets/logo1.png" alt="LFM Technologies Logo" style="height:60px;">
+      </div>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="#about">Chi siamo</a>
+        <a href="#services">Servizi</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </header>
+
+    <!-- Thank you section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="glow-circle"></div>
+        <img src="assets/logo1.png" alt="LFM Technologies" class="hero-logo" style="width:180px; margin-top:40px;">
+        <h1 style="margin-top:20px;">✅ Richiesta inviata con successo!</h1>
+        <p class="slogan" style="max-width:720px; margin:16px auto; font-size:1.05rem; color:var(--muted,#666);">Grazie per averci contattato. Ti risponderemo al più presto per offrirti la soluzione digitale più adatta alle tue esigenze.</p>
+        <a href="/index.html" class="btn">Torna alla home</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024 LFM Technologies. All rights reserved.</p>
+      <div class="social">
+        <a href="https://www.instagram.com/lfmtechnlogies/?igsh=YnFsYnlzbDBoNG13&utm_source=qr" target="_blank" rel="noopener">
+          <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@lfm.technologies?_r=1&_t=ZN-9281kig1xTC" target="_blank" rel="noopener">
+          <img src="https://img.icons8.com/fluency/48/tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://www.facebook.com/share/1D7ozGky5J/?mibextid=wwXIfr" target="_blank" rel="noopener">
+          <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook">
+        </a>
+      </div>
+    </footer>
+
+    <!-- Cursor glow -->
+    <script>
+      document.addEventListener('mousemove', e => {
+        document.body.style.setProperty('--x', e.clientX + 'px');
+        document.body.style.setProperty('--y', e.clientY + 'px');
+      });
+    </script>
+
+    <!-- Evento di conversione Google Ads -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17652246838/Zqd7CKHxla0bELbSn-FB',
+          'value': 1.0,
+          'currency': 'EUR'
+      });
+    </script>
+  </body>
 </html>
